@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="angularApp">
+    <head>
+        <title>Simple one page app in AngularJS</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        <!-- load angular and the route service via CDN -->
+        <script src="//code.angularjs.org/1.6.0-rc.2/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.6.0-rc.2/angular-route.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#!"><i class="fa"></i>First Page</a></li>
+                        <li><a href="#!/second"><i class="fa"></i>Second Page</a></li>
+                        <li><a href="#!/third"><i class="fa"></i>Third Page</a></li>
+                    </ul>
+                </div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+			<div ng-view></div>
+
+		</div>
+
+    </body>
+</html>
